@@ -19,10 +19,11 @@ try {
 }
 
 const today = new Date();
-const todayStr =
-  String(today.getDate()).padStart(2, "0") +
-  "-" +
-  String(today.getMonth() + 1).padStart(2, "0");
+const todayStr = new Intl.DateTimeFormat("en-GB", {
+  timeZone: "Asia/Kolkata",
+  day: "2-digit",
+  month: "2-digit",
+}).format(today).replace("/", "-");
 
 const todayFriends = friends.filter(f => f.dob === todayStr);
 
