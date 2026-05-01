@@ -1,5 +1,6 @@
 name: Birthday Email Bot
 on:
+  workflow_dispatch:
   schedule:
     - cron: "39 18 * * *"
 jobs:
