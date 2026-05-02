@@ -2,7 +2,7 @@ name: Birthday Email Bot
 on:
   workflow_dispatch:
   schedule:
-    - cron: "39 18 * * *"
+    - cron: "35 18 * * *"
 jobs:
   send-emails:
     runs-on: ubuntu-latest

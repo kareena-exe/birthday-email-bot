@@ -1,2 +1,2 @@
-# terraform-practice
-Terraform practice with gap
+# birthday-email-bot
+Send Automatic Emails to Friends on Birthdays
